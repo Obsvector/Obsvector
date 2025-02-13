@@ -77,7 +77,7 @@ const Services = () => {
                 width={500} 
                 height={500} 
                 loading="lazy"
-                className="lg:h-[400px] lg:w-[90%] md:h-[300px] h-[300px] rounded-tl-[100px] hover:rounded-none hover:duration-500 rounded-br-[100px]" 
+                className="lg:h-[400px] lg:w-[90%] w-[100%] md:h-[300px] h-[300px] rounded-tl-[100px] hover:rounded-none hover:duration-500 rounded-br-[100px]" 
               />
             </motion.div>
             <motion.div 
