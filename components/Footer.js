@@ -6,8 +6,8 @@ import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#003566] text-white py-10 px-6 md:px-20">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="bg-[#003566] text-white py-10 px-6 md:px-20 mt-auto">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 justify-between">
         
         {/* ✅ Contact Information */}
         <div className="space-y-4">

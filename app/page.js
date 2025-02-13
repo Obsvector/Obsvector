@@ -4,6 +4,7 @@ import { Ubuntu, Poppins } from "next/font/google";
 import Link from "next/link";
 import Services from "@/components/Services";
 import Offer from '@/components/Offer'
+import Footer from "@/components/Footer";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -83,7 +84,14 @@ const Page = () => {
               <Offer />
             </div>
           </div>
+          <div className="w-screen ">
+            <div className="w-full">
+              <Footer />
+            </div>
+          </div>
         </div>
+        
+        
       </div>
     </div>
   );
