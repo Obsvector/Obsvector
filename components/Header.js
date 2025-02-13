@@ -15,20 +15,11 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <div
-      className={`lg:w-full md:w-full w-[100%] fixed z-10 flex justify-between px-5 lg:px-20 py-5 h-16 items-center transition-all duration-300 ${
+      className={`lg:w-full md:w-full w-[100%] fixed z-10 flex justify-between px-5 lg:px-20 py-5 h-16 items-center  bg-black transition-all duration-300 ${
         ubuntu.className
-      } ${isScrolled ? "bg-[#003566] shadow-lg text-white" : "bg-white bg-opacity-90 text-[#003566]"}`}
+      } `}
     >
       {/* ✅ Logo */}
       <div>
@@ -43,7 +34,7 @@ const Header = () => {
 
       {/* ✅ Desktop Navigation */}
       <div className="hidden lg:flex">
-        <ul className={`flex lg:space-x-20 md:space-x-5 space-x-2 transition-all duration-300 font-bold ${isScrolled ? "text-white" : "text-[#003566]"}`}>
+        <ul className={`flex lg:space-x-20 md:space-x-5 space-x-2 transition-all duration-300 font-bold text-white`}>
           <li><Link href="/">Home</Link></li>
           <li><Link href="/services">Services</Link></li>
           <li><Link href="/about">About Us</Link></li>

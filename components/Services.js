@@ -45,7 +45,6 @@ const serviceData = [
 const Services = () => {
   return (
     <div className="lg:space-y-20 md:space-y-20 space-y-10 px-6 md:px-0 lg:px-20">
-      {/* ✅ Section Title */}
       <motion.div 
         initial={{ opacity: 0, y: -20 }} 
         whileInView={{ opacity: 1, y: 0 }} 
@@ -55,9 +54,7 @@ const Services = () => {
       >
         Services We Offer
       </motion.div>
-
-      {/* ✅ Services Grid */}
-      <div className="grid lg:grid-cols-1 md:grid-cols-1 gap-16">
+      <div className="grid lg:grid-cols-1 md:grid-cols-1 gap-10">
         {serviceData.map((service, index) => (
           <motion.div
             key={index}
@@ -67,7 +64,6 @@ const Services = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            {/* ✅ Image Section */}
             <motion.div
               className={`lg:w-[45%] md:w-[45%] flex ${service.reverse ? "justify-end" : "justify-start"}`}
               initial={{ opacity: 0, x: service.reverse ? -100 : 100 }}
@@ -84,8 +80,6 @@ const Services = () => {
                 className="lg:h-[400px] lg:w-[90%] md:h-[300px] h-[300px] rounded-tl-[100px] hover:rounded-none hover:duration-500 rounded-br-[100px]" 
               />
             </motion.div>
-
-            {/* ✅ Text Section */}
             <motion.div 
               className="lg:w-[45%] md:w-[45%] flex flex-col justify-center items-start text-left space-y-4"
               initial={{ opacity: 0, x: service.reverse ? 100 : -100 }}
