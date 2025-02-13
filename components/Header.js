@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <div
-      className={`lg:w-full md:w-full w-[100%] fixed z-10 flex justify-between px-5 lg:px-20 py-5 h-16 items-center  bg-black transition-all duration-300 ${
+      className={`lg:w-full md:w-full w-screen fixed z-10 flex justify-between px-5 lg:px-20 py-5 h-16 items-center  bg-black transition-all duration-300 ${
         ubuntu.className
       } `}
     >
