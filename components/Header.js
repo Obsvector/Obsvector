@@ -28,7 +28,7 @@ const Header = () => {
     <div
       className={`lg:w-full md:w-full w-[100%] fixed z-10 flex justify-between px-5 lg:px-20 py-5 h-16 items-center transition-all duration-300 ${
         ubuntu.className
-      } ${isScrolled ? "bg-[#003566] shadow-lg text-white" : "bg-white bg-opacity-80 text-[#003566]"}`}
+      } ${isScrolled ? "bg-[#003566] shadow-lg text-white" : "bg-white bg-opacity-90 text-[#003566]"}`}
     >
       {/* ✅ Logo */}
       <div>
