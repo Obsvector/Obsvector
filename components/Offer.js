@@ -16,7 +16,7 @@ const poppins = Poppins({
 
 const Offer = () => {
   return (
-    <div className="lg:space-y-20 md:space-y-20 space-y-10 py-10  bg-[#003566]">
+    <div className="lg:space-y-20 md:space-y-20 space-y-10 py-20  bg-[#003566]">
       {/* ✅ Animated Title */}
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
