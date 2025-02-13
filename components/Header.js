@@ -43,7 +43,7 @@ const Header = () => {
 
       {/* ✅ Desktop Navigation */}
       <div className="hidden lg:flex">
-        <ul className="flex lg:space-x-20 md:space-x-5 space-x-2">
+        <ul className="flex lg:space-x-20 md:space-x-5 space-x-2 text-[#003566]">
           <li><Link href="/">Home</Link></li>
           <li><Link href="/services">Services</Link></li>
           <li><Link href="/about">About Us</Link></li>
