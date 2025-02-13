@@ -1,5 +1,17 @@
 "use client";
 import React, { useState } from "react";
+import { Ubuntu, Poppins } from "next/font/google";
+
+const ubuntu = Ubuntu({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -22,16 +34,16 @@ const Contact = () => {
     <div className="h-screen flex flex-col">
       {/* ✅ Background Section */}
       <div className="bg-[#003566] lg:h-[60%] h-[50%] flex justify-center items-center">
-        <h1 className="text-white text-3xl lg:text-5xl font-bold">Contact Us</h1>
+        <h1 className={`text-white text-3xl lg:text-5xl font-bold ${ubuntu.className}`}>Contact Us</h1>
       </div>
 
       {/* ✅ Form Section */}
       <div className="flex justify-center items-center -mt-20 px-5">
         <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-lg">
-          <h2 className="text-[#003566] text-2xl font-semibold text-center mb-6">
+          <h2 className={`text-[#003566] text-2xl font-semibold text-center mb-6 ${ubuntu.className}`}>
             Get in Touch
           </h2>
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit} className={`space-y-4 ${poppins.className}`}>
             {/* Name Input */}
             <div>
               <label className="block text-[#003566] font-medium">Name</label>
@@ -78,7 +90,7 @@ const Contact = () => {
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-[#003566] text-white py-3 px-6 rounded-lg hover:bg-[#002244] transition-all duration-300"
+                className={`bg-[#003566] text-white py-3 px-6 rounded-lg hover:bg-[#002244] transition-all duration-300 ${poppins.className}`}
               >
                 Send Message
               </button>

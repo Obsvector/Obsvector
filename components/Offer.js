@@ -16,14 +16,14 @@ const poppins = Poppins({
 
 const Offer = () => {
   return (
-    <div className="lg:space-y-20 md:space-y-20 space-y-10 bg-[#003566]">
+    <div className="lg:space-y-20 md:space-y-20 space-y-10 py-10  bg-[#003566]">
       {/* ✅ Animated Title */}
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className={`lg:text-[34px] md:text-[24px] pt-10 text-[18px] text-white font-bold text-center ${ubuntu.className}`}
+        className={`lg:text-[34px] md:text-[24px] text-[18px] text-white font-bold text-center ${ubuntu.className}`}
       >
         What We Offer
       </motion.h2>

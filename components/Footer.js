@@ -1,9 +1,66 @@
-import React from 'react'
+"use client";
+import React from "react";
+import Link from "next/link";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <footer className="bg-[#003566] text-white py-10 px-6 md:px-20">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        {/* ✅ Contact Information */}
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold">Contact Us</h3>
+          <p className="flex items-center"><MdLocationOn className="mr-2" /> Mycon Acropolis Apartments, Madhapur, Hyderabad</p>
+          <p className="flex items-center"><MdEmail className="mr-2" /> obsvector@gmail.com</p>
+          <p className="flex items-center"><MdPhone className="mr-2" /> +91 90525 55678</p>
+        </div>
 
-export default Footer
+        {/* ✅ Quick Links */}
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold">Quick Links</h3>
+          <ul className="space-y-2">
+            <li><Link href="/about" className="hover:text-gray-300">About Us</Link></li>
+            <li><Link href="/services" className="hover:text-gray-300">Our Services</Link></li>
+            <li><Link href="/contact" className="hover:text-gray-300">Contact Us</Link></li>
+            <li><Link href="/faq" className="hover:text-gray-300">FAQs</Link></li>
+          </ul>
+        </div>
+
+        {/* ✅ Helpful Links */}
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold">Helpful Links</h3>
+          <ul className="space-y-2">
+            <li><Link href="/privacy-policy" className="hover:text-gray-300">Privacy Policy</Link></li>
+            <li><Link href="/terms" className="hover:text-gray-300">Terms & Conditions</Link></li>
+            <li><Link href="/contact" className="hover:text-gray-300">Support</Link></li>
+          </ul>
+        </div>
+      </div>
+
+      {/* ✅ Social Media & Copyright */}
+      <div className="border-t border-gray-500 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center text-sm">
+        <p>© {new Date().getFullYear()} Obsvector. All rights reserved.</p>
+        
+        {/* ✅ Social Media Links */}
+        <div className="flex space-x-4 mt-4 md:mt-0">
+          <Link href="https://facebook.com" target="_blank" className="hover:text-gray-300">
+            <FaFacebookF size={20} />
+          </Link>
+          <Link href="https://twitter.com" target="_blank" className="hover:text-gray-300">
+            <FaTwitter size={20} />
+          </Link>
+          <Link href="https://instagram.com" target="_blank" className="hover:text-gray-300">
+            <FaInstagram size={20} />
+          </Link>
+          <Link href="https://linkedin.com" target="_blank" className="hover:text-gray-300">
+            <FaLinkedin size={20} />
+          </Link>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

@@ -54,7 +54,7 @@ const Services = () => {
       >
         Services We Offer
       </motion.div>
-      <div className="grid lg:grid-cols-1 md:grid-cols-1 gap-10">
+      <div className="grid lg:grid-cols-1 md:grid-cols-1 gap-14">
         {serviceData.map((service, index) => (
           <motion.div
             key={index}
