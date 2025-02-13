@@ -29,7 +29,7 @@ const Header = () => {
     <div
       className={`text-white lg:w-full md:w-full w-screen fixed z-10 flex justify-between px-5 lg:px-20 py-5 h-16 items-center ${
         ubuntu.className
-      } ${isScrolled ? "bg-[#003566] shadow-lg" : "bg-white bg-opacity-90"}`}
+      } ${isScrolled ? "bg-[#003566] shadow-lg text-white" : "bg-white bg-opacity-90 text-[#003566]"}`}
     >
       {/* ✅ Logo */}
       <div>
@@ -43,7 +43,7 @@ const Header = () => {
 
       {/* ✅ Desktop Navigation */}
       <div className="hidden lg:flex">
-        <ul className="flex lg:space-x-20 md:space-x-5 space-x-2 text-[#003566]">
+        <ul className="flex lg:space-x-20 md:space-x-5 space-x-2">
           <li><Link href="/">Home</Link></li>
           <li><Link href="/services">Services</Link></li>
           <li><Link href="/about">About Us</Link></li>
