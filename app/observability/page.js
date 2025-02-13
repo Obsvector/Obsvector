@@ -39,8 +39,8 @@ const openSourceTools = [
     { name: "Datadog", image: "/datadog.png" },
     { name: "ELK", image: "/elk.png" },
     { name: "SolarWinds", image: "/solarwinds.png" },
-    { name: "ScienceLogic", image: "/Sciencelogic.jpg" },
-    { name: "OpsRamp", image: "/Opsramp.png" },
+    { name: "ScienceLogic", image: "/ScienceLogic.jpg" },
+    { name: "OpsRamp", image: "/OpsRamp.png" },
   ];
 
 const page = () => {
