@@ -18,7 +18,7 @@ const poppins = Poppins({
 
 const Page = () => {
   return (
-    <div className="relative">
+    <div  className="relative">
       <div className="relative w-full lg:h-screen h-[50vh] overflow-hidden">
         {/* ✅ Video Background */}
         <div className="absolute top-0 left-0 w-full h-full">

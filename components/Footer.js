@@ -24,7 +24,6 @@ const Footer = () => {
             <li><Link href="/about" className="hover:text-gray-300">About Us</Link></li>
             <li><Link href="/services" className="hover:text-gray-300">Our Services</Link></li>
             <li><Link href="/contact" className="hover:text-gray-300">Contact Us</Link></li>
-            <li><Link href="/faq" className="hover:text-gray-300">FAQs</Link></li>
           </ul>
         </div>
 
@@ -32,7 +31,7 @@ const Footer = () => {
         <div className="space-y-4">
           <h3 className="text-xl font-bold">Helpful Links</h3>
           <ul className="space-y-2">
-            <li><Link href="/privacy-policy" className="hover:text-gray-300">Privacy Policy</Link></li>
+            <li><Link href="/privacy" className="hover:text-gray-300">Privacy Policy</Link></li>
             <li><Link href="/terms" className="hover:text-gray-300">Terms & Conditions</Link></li>
             <li><Link href="/contact" className="hover:text-gray-300">Support</Link></li>
           </ul>

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Ubuntu, Poppins } from "next/font/google";
+import Footer from "@/components/Footer";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -11,7 +12,6 @@ const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
-
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -31,14 +31,16 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col">
       {/* ✅ Background Section */}
-      <div className="bg-[#003566] lg:h-[60%] h-[50%] flex justify-center items-center">
-        <h1 className={`text-white text-3xl lg:text-5xl font-bold ${ubuntu.className}`}>Contact Us</h1>
+      <div className="bg-[#003566] lg:h-[50vh] h-[40vh] flex justify-center items-center">
+        <h1 className={`text-white text-3xl lg:text-5xl font-bold ${ubuntu.className}`}>
+          Contact Us
+        </h1>
       </div>
 
       {/* ✅ Form Section */}
-      <div className="flex justify-center items-center -mt-20 px-5">
+      <div className="flex-grow flex justify-center items-center px-5 mb-10 lg:-mt-[10%] md:-mt-[30%] -mt-[40%]">
         <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-lg">
           <h2 className={`text-[#003566] text-2xl font-semibold text-center mb-6 ${ubuntu.className}`}>
             Get in Touch
@@ -98,6 +100,9 @@ const Contact = () => {
           </form>
         </div>
       </div>
+
+      {/* ✅ Footer (Always at Bottom) */}
+      <Footer />
     </div>
   );
 };
