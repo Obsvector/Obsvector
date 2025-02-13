@@ -65,7 +65,7 @@ const Services = () => {
             viewport={{ once: true }}
           >
             <motion.div
-              className={`lg:w-[45%] md:w-[45%] flex ${service.reverse ? "justify-end" : "justify-start"}`}
+              className={`lg:w-[45%] md:w-[45%] flex ${service.reverse ? "lg:justify-end md:justify-end" : "lg:justify-start md:justify-start"}`}
               initial={{ opacity: 0, x: service.reverse ? -100 : 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
