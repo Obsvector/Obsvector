@@ -30,10 +30,22 @@ const About = () => {
             Who We Are
           </h2>
           <p className={`text-gray-600 text-center leading-relaxed ${poppins.className}`}>
-            Welcome to <span className="font-semibold text-[#003566]">Obsvector</span>, where we are dedicated to delivering excellence in everything we do. Our mission is to provide high-quality services that meet the needs of our customers with innovation, integrity, and professionalism.
+            <span className="font-semibold text-[#003566]">ObsVector</span> provides access to a team of highly skilled, experienced engineering and IT professionals, specializing in Monitoring & Observability, IT Managed Services, IT Consulting, and Web & Mobile Application Development.
           </p>
           <p className={`text-gray-600 text-center mt-4 leading-relaxed ${poppins.className}`}>
-            Our team consists of experienced professionals who work tirelessly to bring value and satisfaction to our clients. We believe in continuous growth, adapting to new challenges, and always putting our customers first.
+            We offer end-to-end IT Managed Services, including 24/7 infrastructure monitoring, cloud management, cybersecurity, network operations, and technical support. By outsourcing IT operations to ObsVector, businesses can reduce costs, optimize performance, and maintain seamless IT continuity.
+          </p>
+          <p className={`text-gray-600 text-center mt-4 leading-relaxed ${poppins.className}`}>
+            Our IT Consulting Services assist organizations in strategic IT planning, cloud adoption, cybersecurity, and digital transformation. Our experts provide customized solutions to help businesses make informed technology decisions and stay competitive.
+          </p>
+          <p className={`text-gray-600 text-center mt-4 leading-relaxed ${poppins.className}`}>
+            ObsVector specializes in Web and Mobile Application Development, offering full-stack development, UI/UX design, cloud-native applications, API integrations, and cross-platform mobile development for robust digital experiences.
+          </p>
+          <p className={`text-gray-600 text-center mt-4 leading-relaxed ${poppins.className}`}>
+            We also provide advanced observability solutions, including monitoring tool implementation, log management, performance analytics, and automation-driven optimizations. Our expertise spans tools like Prometheus, Grafana, Datadog, Splunk, and OpenTelemetry for proactive incident detection and response.
+          </p>
+          <p className={`text-gray-600 text-center mt-4 leading-relaxed ${poppins.className}`}>
+            Many organizations rely on ObsVector to augment their IT teams when project schedules, skill gaps, or resource constraints threaten delivery timelines. We ensure seamless IT integration, proactive monitoring, efficient software development, and reliable IT management, helping businesses achieve scalability, security, and digital transformation.
           </p>
           <div className="text-center mt-6">
             <Link href='/contact' className={`bg-[#003566] text-white py-3 px-6 rounded-lg hover:bg-[#002244] transition-all duration-300 ${poppins.className}`}>
