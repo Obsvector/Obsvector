@@ -275,7 +275,7 @@ const page = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={slideIn("left", 0.6)}
-        className="w-[45%]"
+        className="lg:w-[45%] md:w-[45%]"
       >
         <Image
           src="/Optimized.jpg"
@@ -290,7 +290,7 @@ const page = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={slideIn("right", 0.8)}
-        className="w-[50%] flex flex-col justify-center space-y-1"
+        className="lg:w-[50%] md:w-[50%] flex flex-col justify-center space-y-1"
       >
         <div
           className={`lg:text-[24px] md:text-[20px] text-[18px] text-[#003566] font-bold ${ubuntu.className}`}
@@ -324,7 +324,7 @@ const page = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={slideIn("right", 0.6)}
-        className="w-[45%]"
+        className="lg:w-[45%] md:w-[45%]"
       >
         <Image
           src="/Optimized.jpg"
@@ -339,7 +339,7 @@ const page = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={slideIn("left", 0.8)}
-        className="w-[50%] flex flex-col justify-center space-y-1"
+        className="lg:w-[50%] md:w-[50%] flex flex-col justify-center space-y-1"
       >
         <div
           className={`lg:text-[24px] md:text-[20px] text-[18px] text-[#003566] font-bold ${ubuntu.className}`}
@@ -373,7 +373,7 @@ const page = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={slideIn("left", 0.6)}
-        className="w-[45%]"
+        className="lg:w-[45%] md:w-[45%]"
       >
         <Image
           src="/Optimized.jpg"
@@ -388,7 +388,7 @@ const page = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={slideIn("right", 0.8)}
-        className="w-[50%] flex flex-col justify-center space-y-1"
+        className="lg:w-[50%] md:w-[50%] flex flex-col justify-center space-y-1"
       >
         <div
           className={`lg:text-[24px] md:text-[20px] text-[18px] text-[#003566] font-bold ${ubuntu.className}`}

@@ -66,7 +66,7 @@ const page = () => {
         </motion.div>
       </motion.div>
       
-      <motion.div initial='hidden' animate='visible' variants={fadeIn("up", 0.2)} className='space-y-4 py-10 bg-white'>
+      <motion.div initial='hidden' animate='visible' variants={fadeIn("up", 0.2)} className='space-y-4 py-10 bg-white lg:mt-10 md:mt-16 mt-[80%]'>
         <motion.div variants={fadeIn("up", 0.4)} className={`lg:text-[34px] md:text-[24px] text-[18px] text-[#003566] font-bold text-center ${ubuntu.className}`}>
           Why Invest in IT Consulting
         </motion.div>
