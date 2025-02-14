@@ -45,10 +45,12 @@ const page = () => {
             />
         </div>
         </div>
-        <div className='lg:mt-10 md:mt-16 mt-[80%]'>
-        <div className={`lg:text-[34px] md:text-[24px] text-[18px] text-[#003566] font-bold text-center ${ubuntu.className}`}>Expert IT Consulting Services We Offer</div>
-        <div className="lg:grid md:grid lg:grid-cols-3 gap-10 md:grid-cols-3 lg:py-10 lg:px-20 md:p-4 ">
-          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+        <div className='lg:flex md:flex hidden relative w-screen h-[1200px]'>
+            <Image src='/expert.jpg' alt='no image found' layout='fill' objectFit='cover' className='absolute top-0 left-0 w-full h-full opacity-80' />
+            <div className='absolute inset-0 flex flex-col bg-[#003566] bg-opacity-30  items-center text-white text-center px-6'>
+            <div className={`  lg:text-[34px] md:text-[24px] text-[18px] text-white font-bold text-center ${ubuntu.className}`}>Expert IT Consulting Services We Offer</div>
+            <div className="lg:grid md:grid lg:grid-cols-3 gap-10 md:grid-cols-3 lg:py-10 lg:px-20 md:p-4 ">
+          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg bg-white rounded-md shadow-[#003566]'>
             <div className={`lg:text-[24px] md:text-[18px] text-[16px] text-[#003566] font-bold   underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>IT Strategy Consulting</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Align your IT assets with current and anticipated business goals, driving your business forward.</div>
             <div>
@@ -59,7 +61,7 @@ const page = () => {
               </ul>
             </div>
           </div>
-          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg bg-white rounded-md shadow-[#003566]'>
             <div className={`lg:text-[24px] md:text-[18px] text-[16px] text-[#003566] font-bold underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>IT Assessment</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Maximize your IT infrastructure’s efficiency and security while reducing costs and evaluating various IT components.</div>
             <div>
@@ -70,7 +72,7 @@ const page = () => {
               </ul>
             </div>
           </div>
-          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10 space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10 space-y-4 shadow-lg bg-white rounded-md shadow-[#003566]'>
             <div className={`lg:text-[24px] md:text-[18px] text-[16px] text-[#003566] font-bold underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>IT Operations Consulting</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Build sustainable IT solutions that support your business plans.</div>
             <div>
@@ -81,7 +83,7 @@ const page = () => {
               </ul>
             </div>
           </div>
-          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10 space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10 space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[24px] md:text-[18px] text-[16px] text-[#003566] font-bold  underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Digital Transformation</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Enhance your business with transformative digital solutions tailored to drive growth and innovation.</div>
             <div>
@@ -92,19 +94,7 @@ const page = () => {
               </ul>
             </div>
           </div>
-          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10 space-y-4 shadow-lg rounded-md shadow-[#003566]'>
-            <div className={`lg:text-[24px] md:text-[18px] text-[16px] text-[#003566] font-bold  underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Business Process Consulting</div>
-            <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >We offer an in-depth review of your business IT strategy, and other key aspects for IT transformation.</div>
-            <div>
-              <ul className='list-disc text-[#003566] space-y-1'>
-                <li>Assess current business process</li>
-                <li>Assign maturity ratings of apps</li>
-                <li>Generate process analysis reports
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10 space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10 space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[24px] md:text-[18px] text-[16px] text-[#003566] font-bold   underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Cloud Enablement</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Our expert team is dedicated to optimizing your infrastructure and applications into the cloud environment.</div>
             <div>
@@ -116,19 +106,19 @@ const page = () => {
               </ul>
             </div>
           </div>
-          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10 space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10 space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[24px] md:text-[18px] text-[16px] text-[#003566] font-bold underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Security Consulting</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >IT consultants use tested techniques to identify potential security threats and recommend effective remedial measures.</div>
             <div>
               <ul className='list-disc text-[#003566] space-y-1'>
-                <li>Wireless network analysis & assessment</li>
+                <li >Wireless network analysis & assessment</li>
                 <li>Upgrade existing security application</li>
                 <li>Project security analysis and consulting
                 </li>
               </ul>
             </div>
           </div>
-          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[24px] md:text-[18px] text-[16px] text-[#003566] font-bold  underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>IT Service Management</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >We offer efficient IT service management solutions, ensuring optimal efficiency and customer satisfaction.</div>
             <div>
@@ -140,7 +130,7 @@ const page = () => {
               </ul>
             </div>
           </div>
-          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[24px] md:text-[18px] text-[16px] text-[#003566] font-bold  underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Cybersecurity</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Our cybersecurity solutions protect digital assets with proactive monitoring, ensuring data confidentiality.</div>
             <div>
@@ -152,7 +142,7 @@ const page = () => {
               </ul>
             </div>
           </div>
-          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[24px] md:text-[18px] text-[16px] text-[#003566] font-bold  underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>IT and Software Support</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Our IT support services ensure seamless operation, providing expert guidance for sustainable growth.</div>
             <div>
@@ -165,13 +155,14 @@ const page = () => {
             </div>
           </div>
           </div>
+            </div>
         </div>
-        <div className='space-y-4 mt-20'>
+        <div className='space-y-4  py-10 bg-white]'>
         <div className={`lg:text-[34px] md:text-[24px] text-[18px] text-[#003566] font-bold text-center ${ubuntu.className}`}>Why Invest in IT Consulting</div>
 
         <div className={`md:text-md px-4  lg:px-20 text-[12px] md:text-sm  lg:text-[16px]  text-center sm:text-left font-normal text-[#003566] ${poppins.className}`}>IT consulting optimizes operations, boosts efficiency, and keeps your business competitive by leveraging expertise, advanced technologies, and tailored strategies. Here’s why it’s a valuable investment for your organization.</div>
         <div className="lg:grid md:grid lg:grid-cols-3 gap-10 md:grid-cols-3 lg:py-10 lg:px-20 md:p-4 ">
-        <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+        <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10 space-y-4 shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[22px] md:text-[18px] text-[16px] text-[#003566] font-bold  underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Expertise and Specialization</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Offering expert solutions using the latest technologies for optimal outcomes.</div>
           </div>
