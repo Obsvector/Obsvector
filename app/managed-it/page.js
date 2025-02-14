@@ -99,105 +99,105 @@ const page = () => {
         </div>
         
         </div>
-        <div className='lg:mt-10 md:mt-16 mt-[90%]'>
-        <div className={`lg:text-[34px] md:text-[24px] text-[18px] text-[#003566] font-bold text-center ${ubuntu.className}`}>Comprehensive IT Management for Seamless Operations</div>
+        <div className='lg:mt-10 md:mt-16 bg-[#003566] mt-[90%] py-10'>
+        <div className={`lg:text-[34px] md:text-[24px] text-[18px] text-[white] font-bold text-center ${ubuntu.className}`}>Comprehensive IT Management for Seamless Operations</div>
         <div className="lg:grid md:grid lg:grid-cols-5 gap-5 md:grid-cols-3 lg:py-10 lg:px-20 md:p-4 ">
-        <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+        <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[16px] md:text-[16px] text-[14px] text-[#003566] font-bold   underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>24/7/365 Monitoring</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Proactive oversight to detect and resolve issues before they impact your business.</div>
           </div>
 
-          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[14px] md:text-[16px] text-[14px] text-[#003566] font-bold   underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Procurement Assistance</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Expert guidance to help you choose the best technology solutions at the best value.</div>
           </div>
 
 
-          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[16px] md:text-[16px] text-[14px] text-[#003566] font-bold   underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Disaster Recovery & Data Protection</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Secure backup and recovery strategies to safeguard your critical business data.</div>
           </div>
 
 
-          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[16px] md:text-[16px] text-[14px] text-[#003566] font-bold   underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Help Desk Support</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Reliable, round-the-clock IT support to resolve issues swiftly and minimize downtime.</div>
           </div>
 
 
-          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4  bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[16px] md:text-[16px] text-[14px] text-[#003566] font-bold   underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Software License Management</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Ensure compliance and maximize the value of your software investments.</div>
           </div>
 
 
-          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[16px] md:text-[16px] text-[14px] text-[#003566] font-bold   underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Mobile Security Solutions</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Protect your business’s mobile devices with advanced security measures.</div>
           </div>
 
 
-          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[16px] md:text-[16px] text-[14px] text-[#003566] font-bold   underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>On-Site IT Support</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >When remote solutions aren’t enough, our team provides hands-on assistance.</div>
           </div>
 
 
-          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[16px] md:text-[16px] text-[14px] text-[#003566] font-bold   underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Infrastructure Management</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Maintain robust and reliable network connections for seamless business operations.</div>
           </div>
 
 
-          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[16px] md:text-[16px] text-[14px] text-[#003566] font-bold   underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Optimized SaaS Solutions</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Enhance the performance of your SaaS applications for maximum efficiency.</div>
           </div>
 
 
-          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[16px] md:text-[16px] text-[14px] text-[#003566] font-bold   underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Vendor Relationship Management</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Simplify IT vendor interactions with our expert coordination and oversight.</div>
           </div>
 
 
-          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4  bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[16px] md:text-[16px] text-[14px] text-[#003566] font-bold   underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Device Performance & Security</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Keep essential business tools optimized, secure, and fully operational.</div>
           </div>
 
 
-          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[16px] md:text-[16px] text-[14px] text-[#003566] font-bold   underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Cloud Optimization & Management</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Navigate cloud solutions efficiently with our expert support.</div>
           </div>
 
 
-          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[16px] md:text-[16px] text-[14px] text-[#003566] font-bold   underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Strategic IT Change Management</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Minimize disruptions with a structured and seamless IT transition process.</div>
           </div>
 
 
-          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[16px] md:text-[16px] text-[14px] text-[#003566] font-bold   underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Firewall Protection & Security</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Strengthen your cybersecurity with advanced firewall management.</div>
           </div>
 
 
-          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[16px] md:text-[16px] text-[14px] text-[#003566] font-bold   underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Office 365 Data Backup</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Ensure complete protection and recovery of your Office 365 data.</div>
           </div>
 
 
-          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[16px] md:text-[16px] text-[14px] text-[#003566] font-bold   underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>IT Asset Optimization</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Extend the lifespan and maximize the efficiency of your IT investments.</div>
           </div>
 
 
-          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+          <div className='border p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]'>
             <div className={`lg:text-[16px] md:text-[16px] text-[14px] text-[#003566] font-bold   underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Server Performance & Maintenance</div>
             <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Keep your servers running smoothly to support business-critical applications.</div>
           </div>
