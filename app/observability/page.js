@@ -317,75 +317,7 @@ const page = () => {
           </div>
         </div>
       
-      <div className="py-10">
-        <div
-          className={`lg:text-[34px] md:text-[24px] text-[18px] text-[#003566] font-bold text-center ${ubuntu.className}`}
-        >
-          We Support with Expertise
-        </div>
-      </div>
-      <div className="flex flex-col items-center px-6 md:px-0 lg:px-4 ">
-        <div className="lg:flex lg:flex-row justify-center px-6 md:px-0 lg:px-4 py-10 gap-10 lg:space-y-0 md:space-y-10 space-y-10">
-          {/* Open Source Tools */}
-          <div className="flex flex-col items-center lg:w-1/2">
-            <div
-              className={`lg:text-[24px] md:text-[20px] text-[18px] text-[#003566] font-bold text-center mb-8 ${ubuntu.className}`}
-            >
-              Open Source Tools
-            </div>
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 justify-center gap-8">
-              {openSourceTools.map((tool, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col items-center justify-center w-40 h-40 bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition duration-300"
-                >
-                  <Image
-                    src={tool.image}
-                    alt={tool.name}
-                    width={75}
-                    height={75}
-                  />
-                  <div
-                    className={`text-[#003566] text-[18px] font-semibold mt-2 text-center ${poppins.className}`}
-                  >
-                    {tool.name}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Enterprise Tools */}
-          <div className="flex flex-col items-center lg:w-1/2">
-            <div
-              className={`lg:text-[24px] md:text-[20px] text-[18px] text-[#003566] font-bold text-center mb-8 ${ubuntu.className}`}
-            >
-              Enterprise Tools
-            </div>
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 justify-center gap-8">
-              {enterpriseTools.map((tool, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col items-center justify-center w-40 h-40 bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition duration-300"
-                >
-                  <Image
-                    src={tool.image}
-                    alt={tool.name}
-                    width={75}
-                    height={75}
-                  />
-                  <div
-                    className={`text-[#003566] text-[18px] font-semibold mt-2 text-center ${poppins.className}`}
-                  >
-                    {tool.name}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-        
-      </div>
+      
       <div className="bg-[#003566] py-10">
         <div
           className={`lg:text-[34px] md:text-[24px]  text-[18px] text-white font-bold text-center ${ubuntu.className}`}
@@ -488,6 +420,76 @@ const page = () => {
             </p>
           </div>
         </div>
+        
+      </div>
+      <div className="py-10">
+        <div
+          className={`lg:text-[34px] md:text-[24px] text-[18px] text-[#003566] font-bold text-center ${ubuntu.className}`}
+        >
+          We Support with Expertise
+        </div>
+      </div>
+      <div className="flex flex-col items-center px-6 md:px-0 lg:px-4 ">
+        <div className="lg:flex lg:flex-row justify-center px-6 md:px-0 lg:px-4 py-10 gap-20 lg:space-y-0 md:space-y-10 space-y-10">
+          {/* Open Source Tools */}
+          <div className="flex flex-col items-center lg:w-1/2">
+            <div
+              className={`lg:text-[24px] md:text-[20px] text-[18px] text-[#003566] font-bold text-center mb-8 ${ubuntu.className}`}
+            >
+              Open Source Tools
+            </div>
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 justify-center gap-4">
+              {openSourceTools.map((tool, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center justify-center w-36 h-36 bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition duration-300"
+                >
+                  <Image
+                    src={tool.image}
+                    alt={tool.name}
+                    width={75}
+                    height={75}
+                  />
+                  <div
+                    className={`text-[#003566] text-[18px] font-semibold mt-2 text-center ${poppins.className}`}
+                  >
+                    {tool.name}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Enterprise Tools */}
+          <div className="flex flex-col items-center lg:w-1/2">
+            <div
+              className={`lg:text-[24px] md:text-[20px] text-[18px] text-[#003566] font-bold text-center mb-8 ${ubuntu.className}`}
+            >
+              Enterprise Tools
+            </div>
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 justify-center gap-4">
+              {enterpriseTools.map((tool, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center justify-center w-36 h-36 bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition duration-300"
+                >
+                  <Image
+                    src={tool.image}
+                    alt={tool.name}
+                    width={75}
+                    height={75}
+                  />
+                  <div
+                    className={`text-[#003566] text-[18px] font-semibold mt-2 text-center ${poppins.className}`}
+                  >
+                    {tool.name}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        
       </div>
       <Footer />
     </div>
