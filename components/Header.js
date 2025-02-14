@@ -108,17 +108,17 @@ const Header = () => {
             </button>
 
             {dropdownOpen && (
-              <div className="w-full bg-gray-800 rounded-lg mt-2">
-                <Link href="/services/observability" className="block px-4 py-2 hover:bg-gray-700" onClick={() => setMenuOpen(false)}>
+              <div className="w-full  mt-2">
+                <Link href="/observability" className="block px-4 py-2 hover:bg-gray-700" onClick={() => setMenuOpen(false)}>
                   Observability
                 </Link>
-                <Link href="/services/it-consulting" className="block px-4 py-2 hover:bg-gray-700" onClick={() => setMenuOpen(false)}>
+                <Link href="/it-consulting" className="block px-4 py-2 hover:bg-gray-700" onClick={() => setMenuOpen(false)}>
                   IT Consulting
                 </Link>
-                <Link href="/services/managed-it" className="block px-4 py-2 hover:bg-gray-700" onClick={() => setMenuOpen(false)}>
+                <Link href="/managed-it" className="block px-4 py-2 hover:bg-gray-700" onClick={() => setMenuOpen(false)}>
                   Managed IT
                 </Link>
-                <Link href="/services/development" className="block px-4 py-2 hover:bg-gray-700" onClick={() => setMenuOpen(false)}>
+                <Link href="/development" className="block px-4 py-2 hover:bg-gray-700" onClick={() => setMenuOpen(false)}>
                   Development
                 </Link>
               </div>
