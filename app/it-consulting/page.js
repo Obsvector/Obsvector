@@ -45,9 +45,42 @@ const page = () => {
             />
         </div>
         </div>
-        <div className='lg:flex md:flex hidden relative w-screen h-[1200px]'>
-            <Image src='/expert.jpg' alt='no image found' layout='fill' objectFit='cover' className='absolute top-0 left-0 w-full h-full opacity-80' />
-            <div className='absolute inset-0 flex flex-col bg-[#003566] bg-opacity-30  items-center text-white text-center px-6'>
+        
+        <div className='space-y-4  py-10 bg-white]'>
+        <div className={`lg:text-[34px] md:text-[24px] text-[18px] text-[#003566] font-bold text-center ${ubuntu.className}`}>Why Invest in IT Consulting</div>
+
+        <div className={`md:text-md px-4  lg:px-20 text-[12px] md:text-sm  lg:text-[16px]  text-center sm:text-left font-normal text-[#003566] ${poppins.className}`}>IT consulting optimizes operations, boosts efficiency, and keeps your business competitive by leveraging expertise, advanced technologies, and tailored strategies. Here’s why it’s a valuable investment for your organization.</div>
+        <div className="lg:grid md:grid lg:grid-cols-3 gap-10 md:grid-cols-3 lg:py-10 lg:px-20 md:p-4 ">
+        <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10 space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+            <div className={`lg:text-[22px] md:text-[18px] text-[16px] text-[#003566] font-bold  underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Expertise and Specialization</div>
+            <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Offering expert solutions using the latest technologies for optimal outcomes.</div>
+          </div>
+        <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+            <div className={`lg:text-[22px] md:text-[18px] text-[16px] text-[#003566] font-bold  underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Cost-Effectiveness</div>
+            <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Paying for only needed expertise helps businesses cut costs vs. an in-house IT team.</div>
+          </div>
+          <div className='border lg:p-10 p-4 flex flex-col  lg:m-0 md:m-0 m-10 space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+            <div className={`lg:text-[22px] md:text-[18px] text-[16px] text-[#003566] font-bold  underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Efficiency and Productivity</div>
+            <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Consultants optimize workflows and implement technologies to enhance efficiency and performance.</div>
+          </div>
+          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+            <div className={`lg:text-[22px] md:text-[18px] text-[16px] text-[#003566] font-bold  underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Risk Mitigation and Security</div>
+            <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >IT consultants assess vulnerabilities, strengthen security, and monitor to protect data from cyber threats.</div>
+          </div>
+          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+            <div className={`lg:text-[22px] md:text-[18px] text-[16px] text-[#003566] font-bold  underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Scalability and Flexibility</div>
+            <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Offering solutions to adapt to changing demands and growth requirements, enabling businesses to expand.</div>
+          </div>
+          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
+            <div className={`lg:text-[22px] md:text-[18px] text-[16px] text-[#003566] font-bold  underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Strategic Planning and Innovation</div>
+            <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Expert insights and recommendations to align IT initiatives with organizational goals and drive innovation.</div>
+          </div>
+        </div>
+        
+        </div>
+        <div className='lg:flex md:flex hidden  w-screen '>
+           
+            <div className=' inset-0 flex flex-col bg-[#003566] items-center text-white text-center px-6'>
             <div className={`  lg:text-[34px] md:text-[24px] text-[18px] text-white font-bold text-center ${ubuntu.className}`}>Expert IT Consulting Services We Offer</div>
             <div className="lg:grid md:grid lg:grid-cols-3 gap-10 md:grid-cols-3 lg:py-10 lg:px-20 md:p-4 ">
           <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg bg-white rounded-md shadow-[#003566]'>
@@ -156,38 +189,6 @@ const page = () => {
           </div>
           </div>
             </div>
-        </div>
-        <div className='space-y-4  py-10 bg-white]'>
-        <div className={`lg:text-[34px] md:text-[24px] text-[18px] text-[#003566] font-bold text-center ${ubuntu.className}`}>Why Invest in IT Consulting</div>
-
-        <div className={`md:text-md px-4  lg:px-20 text-[12px] md:text-sm  lg:text-[16px]  text-center sm:text-left font-normal text-[#003566] ${poppins.className}`}>IT consulting optimizes operations, boosts efficiency, and keeps your business competitive by leveraging expertise, advanced technologies, and tailored strategies. Here’s why it’s a valuable investment for your organization.</div>
-        <div className="lg:grid md:grid lg:grid-cols-3 gap-10 md:grid-cols-3 lg:py-10 lg:px-20 md:p-4 ">
-        <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10 space-y-4 shadow-lg rounded-md shadow-[#003566]'>
-            <div className={`lg:text-[22px] md:text-[18px] text-[16px] text-[#003566] font-bold  underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Expertise and Specialization</div>
-            <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Offering expert solutions using the latest technologies for optimal outcomes.</div>
-          </div>
-        <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
-            <div className={`lg:text-[22px] md:text-[18px] text-[16px] text-[#003566] font-bold  underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Cost-Effectiveness</div>
-            <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Paying for only needed expertise helps businesses cut costs vs. an in-house IT team.</div>
-          </div>
-          <div className='border lg:p-10 p-4 flex flex-col  lg:m-0 md:m-0 m-10 space-y-4 shadow-lg rounded-md shadow-[#003566]'>
-            <div className={`lg:text-[22px] md:text-[18px] text-[16px] text-[#003566] font-bold  underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Efficiency and Productivity</div>
-            <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Consultants optimize workflows and implement technologies to enhance efficiency and performance.</div>
-          </div>
-          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
-            <div className={`lg:text-[22px] md:text-[18px] text-[16px] text-[#003566] font-bold  underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Risk Mitigation and Security</div>
-            <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >IT consultants assess vulnerabilities, strengthen security, and monitor to protect data from cyber threats.</div>
-          </div>
-          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
-            <div className={`lg:text-[22px] md:text-[18px] text-[16px] text-[#003566] font-bold  underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Scalability and Flexibility</div>
-            <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Offering solutions to adapt to changing demands and growth requirements, enabling businesses to expand.</div>
-          </div>
-          <div className='border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10  space-y-4 shadow-lg rounded-md shadow-[#003566]'>
-            <div className={`lg:text-[22px] md:text-[18px] text-[16px] text-[#003566] font-bold  underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}>Strategic Planning and Innovation</div>
-            <div className={`md:text-md text-[12px] md:text-sm  lg:text-[16px]  sm:text-left font-normal text-[#003566] flex justify-center ${poppins.className}`} >Expert insights and recommendations to align IT initiatives with organizational goals and drive innovation.</div>
-          </div>
-        </div>
-        
         </div>
         <Footer />
     </div>

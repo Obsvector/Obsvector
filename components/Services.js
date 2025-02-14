@@ -20,25 +20,29 @@ const serviceData = [
     title: "Observability",
     description: "We are your trusted partner for the adoption, implementation, and support of monitoring, logging, and tracing—the three pillars of observability. With deep expertise in both open-source and enterprise observability solutions, we provide comprehensive support to ensure seamless integration and optimal performance of your entire landscape .",
     image: "/IT.jpeg",
-    reverse: false
+    reverse: false,
+   link: "/observability"
   },
   {
     title: "IT Consulting",
     description: "Outdated IT systems can affect business growth and drain your valuable resources? With custom IT consulting services, we help businesses achieve efficiency, boost innovation, and ensure long-term success. ",
     image: "/IT consulting.webp",
-    reverse: true
+    reverse: true,
+    link: "/it-consulting"
   },
   {
     title: "Managed IT Services",
     description: "Comprehensive IT support, including network management, helpdesk assistance, and migration support to keep your business running smoothly.",
     image: "/Managed IT.jpeg",
-    reverse: false
+    reverse: false,
+     link: "/managed-it"
   },
   {
     title: "Software Development",
     description: "Our website and mobile application development company serves clients with R&D, prototyping, infrastructure and architecture development, and ongoing agile product delivery, all while adhering to strict compliance and security standards.",
     image: "/Software.jpg",
-    reverse: true
+    reverse: true,
+     link: "/development"
   }
 ];
 
@@ -100,7 +104,7 @@ const Services = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Link href='/contact'>Know More</Link>
+                 <Link href={service.link}>Know More</Link>
               </motion.div>
             </motion.div>
           </motion.div>
