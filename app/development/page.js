@@ -136,6 +136,8 @@ const technologyData = {
   ],
   "DevOps / Cloud": [
     { name: "AWS", image: "/aws.png" },
+    { name: "Google Cloud", image: "/google.png" },
+    { name: "Azure", image: "/azure.jpeg" },
   ],
   Database: [
     { name: "MongoDB", image: "/mongo.png" },
