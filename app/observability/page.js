@@ -8,6 +8,11 @@ import { LuRocket } from "react-icons/lu";
 import { BsClockHistory } from "react-icons/bs";
 import { PiGearFineLight } from "react-icons/pi";
 import Footer from "@/components/Footer";
+import { LuMonitorSmartphone } from "react-icons/lu";
+import { IoMdEye } from "react-icons/io";
+import { FaRegHandshake } from "react-icons/fa6";
+import { LuGraduationCap } from "react-icons/lu";
+import { PiPlugsBold } from "react-icons/pi";
 
 const ubuntu = Ubuntu({
   subsets: ["latin"],
@@ -51,7 +56,7 @@ const page = () => {
           >
             Observability Consulting & Support Partner
           </div>
-          <div className="space-y-2">
+          <div className="space-y-1">
             <p
               className={`md:text-md px-4  lg:px-10 text-[12px] md:text-sm  lg:text-[16px]  text-center sm:text-left font-normal text-white ${poppins.className}`}
             >
@@ -194,69 +199,293 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="w-screen  py-6 mt-10 space-y-4 px-10">
+          <div
+            className={`lg:text-[34px] md:text-[24px] text-[18px] text-[#003566] font-bold text-center ${ubuntu.className}`}
+          >
+            Achieve Seamless Observability with Expert Guidance
+          </div>
+          <p
+            className={`md:text-md text-[12px] md:text-sm lg:text-[20px] sm:text-left font-normal text-[#003566] ${poppins.className}`}
+          >
+            Your trusted partner for end-to-end monitoring, logging, and
+            tracing—empowering you with complete system visibility and
+            performance optimization.
+          </p>
+
+          <div className="flex w-[100%] gap-10">
+            <Image
+              src="/Optimized.jpg"
+              alt="No Image Found"
+              width={500}
+              height={500}
+              className="w-[45%] h-[400px] rounded-md shadow-lg opacity-90"
+            />
+
+            <div className="w-[50%] flex flex-col justify-center space-y-1">
+              <div
+                className={`lg:text-[24px] md:text-[20px] text-[18px] text-[#003566] font-bold ${ubuntu.className}`}
+              >
+                Optimize Infrastructure Monitoring
+              </div>
+              <p>
+                Ensure peak performance for your cloud or hybrid environments
+                with real-time metrics, interactive visualizations, and
+                proactive alerts.
+              </p>
+              <ul className="space-y-0.5">
+                <li>
+                  ✅ Develop predictive analytics to identify potential system
+                  failures
+                </li>
+                <li>
+                  ✅ Design user-friendly dashboards for real-time
+                  infrastructure monitoring
+                </li>
+                <li>
+                  ✅ Set up automated alerts for immediate issue detection
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="flex flex-row-reverse w-[100%] gap-10">
+            <Image
+              src="/Optimized.jpg"
+              alt="No Image Found"
+              width={500}
+              height={500}
+              className="w-[45%] h-[400px] rounded-md shadow-lg opacity-90"
+            />
+
+            <div className="w-[50%] flex flex-col justify-center space-y-1">
+              <div
+                className={`lg:text-[24px] md:text-[20px] text-[18px] text-[#003566] font-bold ${ubuntu.className}`}
+              >
+                Strengthen Your Logging Capabilities
+              </div>
+              <p>
+                Gain full-stack visibility to troubleshoot errors, enhance
+                performance, and mitigate security risks with an optimized
+                logging framework.
+              </p>
+              <ul className="space-y-0.5">
+                <li>✅ Extract actionable insights from application logs</li>
+                <li>
+                  ✅ Implement secure, long-term log storage and retrieval
+                  solutions
+                </li>
+                <li>
+                  ✅ Configure real-time alerts for faster incident response
+                </li>
+                <li>
+                  ✅ Visualize log data for better analysis and decision-making
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="flex w-[100%] gap-10">
+            <Image
+              src="/Optimized.jpg"
+              alt="No Image Found"
+              width={500}
+              height={500}
+              className="w-[45%] h-[400px] rounded-md shadow-lg opacity-90"
+            />
+
+            <div className="w-[50%] flex flex-col justify-center space-y-1">
+              <div
+                className={`lg:text-[24px] md:text-[20px] text-[18px] text-[#003566] font-bold ${ubuntu.className}`}
+              >
+                Leverage Distributed Tracing for Deeper Insights
+              </div>
+              <p>
+                Track every transaction across your application stack to
+                pinpoint slowdowns and inefficiencies with precision.
+              </p>
+              <ul className="space-y-0.5">
+                <li>
+                  ✅ Integrate tracing capabilities into your logging system
+                  failures
+                </li>
+                <li>
+                  ✅ Collect, manage, and analyze telemetry data for full-stack
+                  transparency
+                </li>
+                <li>✅ Accelerate debugging with in-depth trace analysis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+      <div className="py-10">
         <div
-          className={`lg:text-[34px] md:text-[24px] mt-20 text-[18px] text-[#003566] font-bold text-center ${ubuntu.className}`}
+          className={`lg:text-[34px] md:text-[24px] text-[18px] text-[#003566] font-bold text-center ${ubuntu.className}`}
         >
           We Support with Expertise
         </div>
       </div>
-      <div className="flex flex-col gap-16 px-6 md:px-0 lg:px-20 py-10">
-        {/* Open Source Tools */}
-        <div className="flex flex-col items-center">
-          <div
-            className={`lg:text-[24px] md:text-[20px] text-[18px] text-[#003566] font-bold text-center mb-8 ${ubuntu.className}`}
-          >
-            Open Source Tools
-          </div>
-          <div className="flex flex-wrap justify-center gap-12">
-            {openSourceTools.map((tool, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center justify-center w-40 h-40 bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition duration-300"
-              >
-                <Image
-                  src={tool.image}
-                  alt={tool.name}
-                  width={75}
-                  height={75}
-                />
+      <div className="flex flex-col items-center px-6 md:px-0 lg:px-4 ">
+        <div className="lg:flex lg:flex-row justify-center px-6 md:px-0 lg:px-4 py-10 gap-10 lg:space-y-0 md:space-y-10 space-y-10">
+          {/* Open Source Tools */}
+          <div className="flex flex-col items-center lg:w-1/2">
+            <div
+              className={`lg:text-[24px] md:text-[20px] text-[18px] text-[#003566] font-bold text-center mb-8 ${ubuntu.className}`}
+            >
+              Open Source Tools
+            </div>
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 justify-center gap-8">
+              {openSourceTools.map((tool, index) => (
                 <div
-                  className={`text-[#003566] text-[18px] font-semibold mt-2 text-center ${poppins.className}`}
+                  key={index}
+                  className="flex flex-col items-center justify-center w-40 h-40 bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition duration-300"
                 >
-                  {tool.name}
+                  <Image
+                    src={tool.image}
+                    alt={tool.name}
+                    width={75}
+                    height={75}
+                  />
+                  <div
+                    className={`text-[#003566] text-[18px] font-semibold mt-2 text-center ${poppins.className}`}
+                  >
+                    {tool.name}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+          </div>
+
+          {/* Enterprise Tools */}
+          <div className="flex flex-col items-center lg:w-1/2">
+            <div
+              className={`lg:text-[24px] md:text-[20px] text-[18px] text-[#003566] font-bold text-center mb-8 ${ubuntu.className}`}
+            >
+              Enterprise Tools
+            </div>
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 justify-center gap-8">
+              {enterpriseTools.map((tool, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center justify-center w-40 h-40 bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition duration-300"
+                >
+                  <Image
+                    src={tool.image}
+                    alt={tool.name}
+                    width={75}
+                    height={75}
+                  />
+                  <div
+                    className={`text-[#003566] text-[18px] font-semibold mt-2 text-center ${poppins.className}`}
+                  >
+                    {tool.name}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-
-        {/* Enterprise Tools */}
-        <div className="flex flex-col items-center">
-          <div
-            className={`lg:text-[24px] md:text-[20px] text-[18px] text-[#003566] font-bold text-center mb-8 ${ubuntu.className}`}
-          >
-            Enterprise Tools
+        
+      </div>
+      <div className="bg-[#003566] py-10">
+        <div
+          className={`lg:text-[34px] md:text-[24px]  text-[18px] text-white font-bold text-center ${ubuntu.className}`}
+        >
+          What we offer?
+        </div>
+        <div className="flex flex-wrap mx-2 justify-center gap-8 py-10">
+          <div className="bg-white flex flex-col justify-center h-64 w-[600px] space-y-2 overflow-hidden text-[#003566] shadow-lg rounded-md p-5 duration-500 ">
+            <div className="flex ">
+              <LuMonitorSmartphone size={40} color="#003566" />
+            </div>
+            <div
+              className={`lg:text-[20px] md:text-[16px] text-[14px] text-[#003566] font-bold ${ubuntu.className}`}
+            >
+              Observability Consulting & Strategic Planning
+            </div>
+            <p
+              className={`md:text-md text-[12px] md:text-sm lg:text-[14px] sm:text-left font-normal text-[#003566] ${poppins.className}`}
+            >
+              Our observability consultants help you select the best tools
+              tailored to your needs, whether open-source solutions like
+              Prometheus, Grafana, Fluentd, and Jaeger or enterprise platforms
+              such as Datadog, New Relic, and Dynatrace. We ensure seamless
+              integration to enhance system visibility, security, and
+              performance.
+            </p>
           </div>
-          <div className="flex flex-wrap justify-center gap-12">
-            {enterpriseTools.map((tool, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center justify-center w-40 h-40 bg-gray-100 rounded-lg shadow-md hover:shadow-lg transition duration-300"
-              >
-                <Image
-                  src={tool.image}
-                  alt={tool.name}
-                  width={75}
-                  height={75}
-                />
-                <div
-                  className={`text-[#003566] text-[18px] font-semibold mt-2 text-center ${poppins.className}`}
-                >
-                  {tool.name}
-                </div>
-              </div>
-            ))}
+          <div className="bg-white flex flex-col justify-center h-64 w-[600px] space-y-2 overflow-hidden text-[#003566] shadow-lg rounded-md p-5 duration-500 ">
+            <div className="flex ">
+              <IoMdEye size={40} color="#003566" />
+            </div>
+            <div
+              className={`lg:text-[20px] md:text-[16px] text-[14px] text-[#003566] font-bold ${ubuntu.className}`}
+            >
+              Observability Deployment & Optimization{" "}
+            </div>
+            <p
+              className={`md:text-md text-[12px] md:text-sm lg:text-[14px] sm:text-left font-normal text-[#003566] ${poppins.className}`}
+            >
+              Our implementation experts design and set up a complete
+              observability framework, incorporating monitoring, alerting, and
+              tracing. We build an optimized observability stack that provides
+              real-time insights, proactive alerts, and faster troubleshooting
+              for a more reliable infrastructure.
+            </p>
+          </div>
+          <div className="bg-white flex flex-col justify-center h-64 w-[600px] space-y-2 overflow-hidden text-[#003566] shadow-lg rounded-md p-5 duration-500 ">
+            <div className="flex ">
+              <FaRegHandshake size={40} color="#003566" />
+            </div>
+            <div
+              className={`lg:text-[20px] md:text-[16px] text-[14px] text-[#003566] font-bold ${ubuntu.className}`}
+            >
+              Comprehensive Observability Management
+            </div>
+            <p
+              className={`md:text-md text-[12px] md:text-sm lg:text-[14px] sm:text-left font-normal text-[#003566] ${poppins.className}`}
+            >
+              Leave the complexities of application monitoring, anomaly
+              detection, and performance optimization to our skilled engineers.
+              We identify and resolve blind spots, minimize system disruptions,
+              and reduce Mean Time to Detect (MTTD) and Mean Time to Resolve
+              (MTTR) for seamless operations.
+            </p>
+          </div>
+          <div className="bg-white flex flex-col justify-center h-64 w-[600px] space-y-2 overflow-hidden text-[#003566] shadow-lg rounded-md p-5 duration-500 ">
+            <div className="flex ">
+              <LuGraduationCap size={40} color="#003566" />
+            </div>
+            <div
+              className={`lg:text-[20px] md:text-[16px] text-[14px] text-[#003566] font-bold ${ubuntu.className}`}
+            >
+              Upskilling with Observability Training
+            </div>
+            <p
+              className={`md:text-md text-[12px] md:text-sm lg:text-[14px] sm:text-left font-normal text-[#003566] ${poppins.className}`}
+            >
+              Equip your team with hands-on training led by experienced
+              observability specialists. Our training programs empower engineers
+              with the expertise to manage and optimize observability solutions
+              independently while fostering a culture of continuous monitoring
+              and improvement.
+            </p>
+          </div>
+          <div className="bg-white flex flex-col justify-center h-64 w-[600px]  space-y-2 overflow-hidden text-[#003566] shadow-lg rounded-md p-4 duration-500 ">
+            <div className="flex ">
+              <PiPlugsBold size={40} color="#003566" />
+            </div>
+            <div
+              className={`lg:text-[20px] md:text-[16px] text-[14px] text-[#003566] font-bold  ${ubuntu.className}`}
+            >
+              Custom Connectors
+            </div>
+            <p
+              className={`md:text-md text-[12px] md:text-sm lg:text-[14px] sm:text-left font-normal text-[#003566] ${poppins.className}`}
+            >
+              Connect your ITSM, Monitoring, Cloud, DevOps, and CRM tools with
+              our no-code integrations that are easy to set up and customize.
+              Modify and scale on the go as your business needs change.
+            </p>
           </div>
         </div>
       </div>

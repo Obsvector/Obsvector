@@ -31,7 +31,7 @@ const serviceData = [
   {
     title: "Managed IT Services",
     description: "Comprehensive IT support, including network management, helpdesk assistance, and migration support to keep your business running smoothly.",
-    image: "/Managed It.jpeg",
+    image: "/Managed IT.jpeg",
     reverse: false
   },
   {
