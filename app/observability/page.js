@@ -213,7 +213,7 @@ const page = () => {
             performance optimization.
           </p>
 
-          <div className="flex w-[100%] gap-10">
+          <div className="lg:flex md:flex w-[100%] gap-10">
             <Image
               src="/Optimized.jpg"
               alt="No Image Found"
@@ -248,7 +248,7 @@ const page = () => {
               </ul>
             </div>
           </div>
-          <div className="flex flex-row-reverse w-[100%] gap-10">
+          <div className="lg:flex md:flex  lg:flex-row-reverse  md:flex-row-reverse  w-[100%] gap-10">
             <Image
               src="/Optimized.jpg"
               alt="No Image Found"
@@ -283,7 +283,7 @@ const page = () => {
               </ul>
             </div>
           </div>
-          <div className="flex w-[100%] gap-10">
+          <div className="lg:flex md:flex w-[100%] gap-10">
             <Image
               src="/Optimized.jpg"
               alt="No Image Found"
