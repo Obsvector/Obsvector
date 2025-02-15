@@ -67,7 +67,7 @@ const Page = () => {
   />
 
   {/* ✅ Overlay Text & Services on Looper-1 */}
-  <div className="relative w-full flex flex-col items-center px-[5%]">
+  <div className="relative w-full flex flex-col items-center px-[5%] py-10">
     {/* ✅ Heading - "Obsvector: A Managed IT Service Provider" */}
     <div className={`lg:text-[34px] md:text-[24px] text-[18px] text-[#003566] font-bold text-center ${ubuntu.className}`}>
       Obsvector: A Managed IT Service Provider
@@ -75,7 +75,7 @@ const Page = () => {
 
     {/* ✅ Company Description */}
     <div className={`lg:text-[16px] md:text-[14px] text-[12px] font-normal py-6 leading-loose max-w-5xl ${poppins.className}`}>
-      Obsvector is a problem-solving IT consulting and managed IT services provider headquartered in Toronto. We’re the experts other technicians turn to when they need advanced solutions. Our team has honed its expertise through hands-on experience in the field, tackling complex challenges, testing strategies, and refining best practices. We continuously innovate to develop and optimize IT infrastructure, ensuring seamless connectivity and security for our clients.
+      Obsvector is a problem-solving IT consulting and managed IT services provider. We’re the experts other technicians turn to when they need advanced solutions. Our team has honed its expertise through hands-on experience in the field, tackling complex challenges, testing strategies, and refining best practices. We continuously innovate to develop and optimize IT infrastructure, ensuring seamless connectivity and security for our clients.
       <br /><br />
       Partner with Obsvector to design and implement a robust IT infrastructure that supports long-term growth. Our team proactively monitors your assets and network, enhancing efficiency while detecting and neutralizing potential threats. We safeguard your enterprise by deploying timely security patches and upgrades, ensuring your systems remain protected and resilient.
     </div>
