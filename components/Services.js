@@ -62,7 +62,7 @@ const Services = () => {
         {serviceData.map((service, index) => (
           <motion.div
             key={index}
-            className={`flex flex-col-reverse lg:flex-row md:flex-row ${service.reverse ? "lg:flex-row-reverse md:flex-row-reverse" : ""} items-center justify-between gap-10`}
+            className={`flex flex-col lg:flex-row md:flex-row ${service.reverse ? "lg:flex-row-reverse md:flex-row-reverse" : ""} items-center justify-between gap-10`}
             initial={{ opacity: 0, x: service.reverse ? 100 : -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
