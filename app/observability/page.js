@@ -234,8 +234,9 @@ const page = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
+          whileHover={{ x: 4, y: -4 }}
           variants={tile.animation}
-          className="h-32 flex flex-col lg:m-0 md:m-0 m-10 items-center justify-center px-10 shadow-lg shadow-[#003566] space-y-1 rounded-md"
+          className="h-32 flex flex-col cursor-pointer lg:m-0 md:m-0 m-10 items-center justify-center px-10 shadow-lg shadow-[#003566] space-y-1 rounded-md"
         >
           <div>{tile.icon}</div>
           <div
@@ -247,7 +248,7 @@ const page = () => {
       ))}
     </div>
   </div>
-  <div className="w-screen py-6 mt-10 space-y-4 px-10">
+  <div className="w-screen py-6 mt-10 space-y-10 px-10">
     <motion.div
       initial="hidden"
       whileInView="visible"
@@ -269,20 +270,20 @@ const page = () => {
       performance optimization.
     </motion.p>
 
-    <div className="lg:flex md:flex w-[100%] gap-10">
+    <div className="lg:flex md:flex w-[100%]">
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={slideIn("left", 0.6)}
-        className="lg:w-[45%] md:w-[45%]"
+        className="lg:w-[50%] md:w-[50%]"
       >
         <Image
           src="/Optimized.jpg"
           alt="No Image Found"
           width={500}
           height={500}
-          className="h-[400px] rounded-md shadow-lg opacity-90"
+          className="rounded-md w-[90%] h-[300px] shadow-lg opacity-90"
         />
       </motion.div>
       <motion.div
@@ -324,14 +325,14 @@ const page = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={slideIn("right", 0.6)}
-        className="lg:w-[45%] md:w-[45%]"
+        className="lg:w-[50%] md:w-[45%]"
       >
         <Image
-          src="/Optimized.jpg"
+          src="/Login.webp"
           alt="No Image Found"
           width={500}
           height={500}
-          className="h-[400px] rounded-md shadow-lg opacity-90"
+         className="rounded-md w-[90%] h-[300px] shadow-lg opacity-90"
         />
       </motion.div>
       <motion.div
@@ -376,11 +377,11 @@ const page = () => {
         className="lg:w-[45%] md:w-[45%]"
       >
         <Image
-          src="/Optimized.jpg"
+          src="/Tracking.jpg"
           alt="No Image Found"
           width={500}
           height={500}
-          className="h-[400px] rounded-md shadow-lg opacity-90"
+          className="rounded-md w-[90%] h-[300px] shadow-lg opacity-90"
         />
       </motion.div>
       <motion.div
@@ -431,31 +432,31 @@ const page = () => {
     >
       {[
         {
-          icon: <LuMonitorSmartphone size={40} color="#003566" />,
+          icon: <LuMonitorSmartphone size={40} color="white" />,
           title: "Observability Consulting & Strategic Planning",
           content: "Our observability consultants help you select the best tools tailored to your needs, whether open-source solutions like Prometheus, Grafana, Fluentd, and Jaeger or enterprise platforms such as Datadog, New Relic, and Dynatrace. We ensure seamless integration to enhance system visibility, security, and performance.",
           animation: slideIn("left", 0.2),
         },
         {
-          icon: <IoMdEye size={40} color="#003566" />,
+          icon: <IoMdEye size={40} color="white" />,
           title: "Observability Deployment & Optimization",
           content: "Our implementation experts design and set up a complete observability framework, incorporating monitoring, alerting, and tracing. We build an optimized observability stack that provides real-time insights, proactive alerts, and faster troubleshooting for a more reliable infrastructure.",
           animation: slideIn("right", 0.4),
         },
         {
-          icon: <FaRegHandshake size={40} color="#003566" />,
+          icon: <FaRegHandshake size={40} color="white" />,
           title: "Comprehensive Observability Management",
           content: "Leave the complexities of application monitoring, anomaly detection, and performance optimization to our skilled engineers. We identify and resolve blind spots, minimize system disruptions, and reduce Mean Time to Detect (MTTD) and Mean Time to Resolve (MTTR) for seamless operations.",
           animation: slideIn("left", 0.6),
         },
         {
-          icon: <LuGraduationCap size={40} color="#003566" />,
+          icon: <LuGraduationCap size={40} color="white" />,
           title: "Upskilling with Observability Training",
           content: "Equip your team with hands-on training led by experienced observability specialists. Our training programs empower engineers with the expertise to manage and optimize observability solutions independently while fostering a culture of continuous monitoring and improvement.",
           animation: slideIn("right", 0.8),
         },
         {
-          icon: <PiPlugsBold size={40} color="#003566" />,
+          icon: <PiPlugsBold size={40} color="white" />,
           title: "Custom Connectors",
           content: "Connect your ITSM, Monitoring, Cloud, DevOps, and CRM tools with our no-code integrations that are easy to set up and customize. Modify and scale on the go as your business needs change.",
           animation: slideIn("left", 1),
@@ -466,17 +467,18 @@ const page = () => {
           variants={item.animation}
           initial="hidden"
           whileInView="visible"
+          whileHover={{ x: 4, y: -4 }}
           viewport={{ once: true }}
-          className="bg-white flex flex-col justify-center h-64 w-[600px] space-y-2 overflow-hidden text-[#003566] shadow-lg rounded-md p-5 duration-500"
+          className="border border-white flex flex-col justify-center h-64 w-[600px] space-y-2 overflow-hidden text-white shadow-lg rounded-md p-5 duration-200"
         >
           <div className="flex">{item.icon}</div>
           <div
-            className={`lg:text-[20px] md:text-[16px] text-[14px] text-[#003566] font-bold ${ubuntu.className}`}
+            className={`lg:text-[20px] md:text-[16px] text-[14px] text-white font-bold ${ubuntu.className}`}
           >
             {item.title}
           </div>
           <p
-            className={`md:text-md text-[12px] md:text-sm lg:text-[14px] sm:text-left font-normal text-[#003566] ${poppins.className}`}
+            className={`md:text-md text-[12px] md:text-sm lg:text-[14px] sm:text-left font-normal text-white ${poppins.className}`}
           >
             {item.content}
           </p>
