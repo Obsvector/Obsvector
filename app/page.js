@@ -18,7 +18,7 @@ const poppins = Poppins({
 
 const Page = () => {
   return (
-    <div  className="relative">
+    <div  className="relative min-h-screen">
       <div className="relative w-full lg:h-screen h-[50vh] overflow-hidden">
         {/* ✅ Video Background */}
         <div className="absolute top-0 left-0 w-full h-full">
@@ -57,37 +57,44 @@ const Page = () => {
 
       {/* ✅ Image Container with Overlay Text */}
       <div className="relative w-full flex justify-center">
-        <Image src="/Looper-1.png" alt="No Image Found" width={500} height={500} className="w-full" />
+  {/* ✅ Background Image */}
+  <Image 
+    src="/Looper-1.png" 
+    alt="No Image Found" 
+    width={500} 
+    height={500} 
+    className="absolute inset-0 w-full h-full object-cover"
+  />
 
-        {/* ✅ Overlay Text & Services on Looper-1 */}
-        <div className="absolute top-[1%]  w-full flex flex-col items-center px-[5%]">
-          {/* ✅ Heading - "Obsvector: A Managed IT Service Provider" */}
-          <div className={`lg:text-[34px] md:text-[24px] text-[18px] text-[#003566] font-bold text-center ${ubuntu.className}`}>
-            Obsvector: A Managed IT Service Provider
-          </div>
+  {/* ✅ Overlay Text & Services on Looper-1 */}
+  <div className="relative w-full flex flex-col items-center px-[5%]">
+    {/* ✅ Heading - "Obsvector: A Managed IT Service Provider" */}
+    <div className={`lg:text-[34px] md:text-[24px] text-[18px] text-[#003566] font-bold text-center ${ubuntu.className}`}>
+      Obsvector: A Managed IT Service Provider
+    </div>
 
-          {/* ✅ Company Description */}
-          <div className={`lg:text-[16px] md:text-[14px] text-[12px] font-normal py-6 leading-loose  max-w-5xl ${poppins.className}`}>
-            Obsvector is a problem-solving IT consulting and managed IT services provider headquartered in Toronto. We’re the experts other technicians turn to when they need advanced solutions. Our team has honed its expertise through hands-on experience in the field, tackling complex challenges, testing strategies, and refining best practices. We continuously innovate to develop and optimize IT infrastructure, ensuring seamless connectivity and security for our clients.
-            <br /><br />
-            Partner with Obsvector to design and implement a robust IT infrastructure that supports long-term growth. Our team proactively monitors your assets and network, enhancing efficiency while detecting and neutralizing potential threats. We safeguard your enterprise by deploying timely security patches and upgrades, ensuring your systems remain protected and resilient.
-          </div>
+    {/* ✅ Company Description */}
+    <div className={`lg:text-[16px] md:text-[14px] text-[12px] font-normal py-6 leading-loose max-w-5xl ${poppins.className}`}>
+      Obsvector is a problem-solving IT consulting and managed IT services provider headquartered in Toronto. We’re the experts other technicians turn to when they need advanced solutions. Our team has honed its expertise through hands-on experience in the field, tackling complex challenges, testing strategies, and refining best practices. We continuously innovate to develop and optimize IT infrastructure, ensuring seamless connectivity and security for our clients.
+      <br /><br />
+      Partner with Obsvector to design and implement a robust IT infrastructure that supports long-term growth. Our team proactively monitors your assets and network, enhancing efficiency while detecting and neutralizing potential threats. We safeguard your enterprise by deploying timely security patches and upgrades, ensuring your systems remain protected and resilient.
+    </div>
 
-          {/* ✅ New Section - "Services We Offer" */}
-          <div className="w-full flex flex-col items-center text-center px-4 lg:px-10 pt-10">
-            <div className="mt-10 w-full">
-              <Services />
-            </div>
-          </div>
-          <div className="w-screen flex flex-col items-center text-center pt-10">
-            <div className="mt-10 w-full">
-              <Offer />
-            </div>
-          </div>
-          <div className="w-screen ">
-            <div className="w-full">
-              <Footer />
-            </div>
+    {/* ✅ New Section - "Services We Offer" */}
+    <div className="w-full flex flex-col items-center text-center px-4 lg:px-10 pt-10">
+      <div className="mt-10 w-full">
+        <Services />
+      </div>
+    </div>
+    <div className="w-screen flex flex-col items-center text-center pt-10">
+      <div className="mt-10 w-full">
+        <Offer />
+      </div>
+    </div>
+    <div className="w-screen">
+      <div className="w-full">
+        <Footer />
+      </div>
           </div>
         </div>
         
