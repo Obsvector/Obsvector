@@ -18,6 +18,7 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
 });
 
+
 const slideEffect = (direction = "up", delay = 0) => ({
   hidden: {
     opacity: 0,
@@ -29,12 +30,13 @@ const slideEffect = (direction = "up", delay = 0) => ({
     x: 0,
     y: 0,
     transition: {
-      duration: 1,
+      duration: 1, // Slightly longer duration for a different feel
       delay,
       ease: "easeInOut",
     },
   },
 });
+
 
 const slideFromSide = (direction = "up", delay = 0) => ({
   hidden: {
@@ -53,6 +55,27 @@ const slideFromSide = (direction = "up", delay = 0) => ({
     },
   },
 });
+
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const itemHover = {
+  whileHover: {
+    scale: 1.05,
+    x: 6,
+    y: -6,
+    transition: { duration: 0.3, ease: "easeInOut" },
+  },
+};
+
 
 const categoryVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -225,11 +248,12 @@ const Page = () => {
       >
         Our Mobile App Development Services
       </motion.div>
-      <div className="lg:grid md:grid lg:grid-cols-3 gap-10 md:grid-cols-3 lg:py-10 lg:px-20 md:p-4">
+      <motion.div  className="lg:grid md:grid lg:grid-cols-3 gap-10 md:grid-cols-3 lg:py-10 lg:px-20 md:p-4"
+    variants={containerVariants}>
         {tiles.map((tile, index) => (
           <motion.div
             key={index}
-            variants={slideFromSide("left", index * 0.1)}
+            variants={slideEffect(tile.direction, 0.2 * index)}
             whileHover={{ x: 4, y: -4, transition: { duration: 0.2 } }}
             className="border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10 space-y-4 shadow-lg rounded-md shadow-[#003566]"
           >
@@ -245,7 +269,7 @@ const Page = () => {
             </div>
           </motion.div>
         ))}
-      </div>
+      </motion.div>
     </motion.div>
       <div className="bg-blue-100 py-10">
         <div
