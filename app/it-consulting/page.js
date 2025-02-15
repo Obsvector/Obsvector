@@ -168,7 +168,7 @@ const page = () => {
           ))}
         </div>
       </motion.div>
-      <div className="lg:flex md:flex hidden w-screen">
+      <div className="flex w-screen">
         <div className="inset-0 flex flex-col bg-[#003566] items-center text-white text-center px-6 py-10">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
