@@ -29,7 +29,7 @@ const slideEffect = (direction = "up", delay = 0) => ({
     x: 0,
     y: 0,
     transition: {
-      duration: 0.8,
+      duration: 1,
       delay,
       ease: "easeInOut",
     },
