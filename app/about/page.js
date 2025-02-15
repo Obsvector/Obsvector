@@ -136,9 +136,9 @@ const About = () => {
     Why Choose Us
   </motion.h2>
 
-  <div className="flex justify-center w-full">
-    <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 w-full max-w-6xl mx-auto">
-      
+  <div className="flex flex-col items-center w-full">
+    {/* Top Row - 3 Cards */}
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 w-full max-w-6xl">
       {[
         {
           title: "End-to-End IT Solutions",
@@ -155,6 +155,26 @@ const About = () => {
           description: "We detect and resolve issues before they disrupt your operations, ensuring seamless business continuity.",
           delay: 0.6,
         },
+      ].map((item, index) => (
+        <motion.div
+          key={index}
+          variants={fadeIn("up", item.delay)}
+          whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+          className="border border-gray-300 bg-white shadow-lg rounded-2xl p-6 flex flex-col justify-center items-center text-center space-y-3 transform transition duration-300 hover:shadow-xl"
+        >
+          <div className={`text-xl font-semibold text-[#003566] ${ubuntu.className}`}>
+            {item.title}
+          </div>
+          <p className={`text-gray-700 ${poppins.className}`}>
+            {item.description}
+          </p>
+        </motion.div>
+      ))}
+    </div>
+
+    {/* Bottom Row - 2 Centered Cards */}
+    <div className="grid lg:grid-cols-2 gap-6 mt-6 w-full max-w-4xl">
+      {[
         {
           title: "Cost-Optimized IT Solutions",
           description: "Reduce expenses while maintaining top-tier IT quality and efficiency.",
@@ -183,6 +203,7 @@ const About = () => {
     </div>
   </div>
 </motion.div>
+
 
       {/* Final CTA Section */}
       <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn("up", 0.2)} className="flex w-screen h-80 gap-10">
