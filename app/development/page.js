@@ -54,6 +54,16 @@ const slideFromSide = (direction = "up", delay = 0) => ({
   },
 });
 
+const categoryVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, scale: 0.9 },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.3, delay: 0.1 } },
+};
+
   const tiles = [
     {
       title: "Mobile App Consulting",
@@ -160,6 +170,7 @@ const Page = () => {
     whileInView="visible"
     viewport={{ once: true }}
     className="lg:flex md:flex w-[100%] lg:h-[70vh] md:h-[50vh] h-[40vh] bg-[#003566] pt-20"
+    
   >
     <motion.div
       variants={slideEffect("left", 0.2)}
@@ -219,6 +230,7 @@ const Page = () => {
           <motion.div
             key={index}
             variants={slideFromSide("left", index * 0.1)}
+            whileHover={{ x: 4, y: -4, transition: { duration: 0.2 } }}
             className="border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10 space-y-4 shadow-lg rounded-md shadow-[#003566]"
           >
             <div
@@ -256,7 +268,7 @@ const Page = () => {
         {/* Display Selected Category Images */}
         <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-8 px-6 md:px-20">
           {technologyData[selectedCategory].map((tech, index) => (
-            <div key={index} className="flex flex-col items-center space-y-2 p-4 border rounded-md shadow-md bg-white">
+            <div key={index} className="flex flex-col items-center space-y-2 p-4 border rounded-md shadow-md bg-white hover:translate-x-1 hover:-translate-y-1 duration-500">
               <Image src={tech.image} alt={tech.name} width={60} height={60} className="object-contain" />
               <div className={`text-[#003566] text-[16px] font-semibold text-center ${poppins.className}`}>
                 {tech.name}

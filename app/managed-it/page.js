@@ -187,6 +187,7 @@ const page = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
+          whileHover={{ x: 4, y: -4, transition: { duration: 0.2 } }}
           variants={tile.animation}
           className="border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10 space-y-4 shadow-lg rounded-md shadow-[#003566]"
         >
@@ -239,6 +240,7 @@ const page = () => {
         <motion.div
           key={index}
           variants={slideEffect(tile.direction, 0.2 * index)}
+          whileHover={{ x: 4, y: -4, transition: { duration: 0.2 } }}
           className="border p-4 flex flex-col lg:m-0 md:m-0 m-10 space-y-4 bg-white shadow-lg rounded-md shadow-[#003566]"
         >
           <div
