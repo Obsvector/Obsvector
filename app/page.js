@@ -67,7 +67,7 @@ const Page = () => {
   />
 
   {/* ✅ Overlay Text & Services on Looper-1 */}
-  <div className="relative w-full flex flex-col items-center px-[5%] py-10">
+  <div className="relative w-full flex flex-col items-center px-[5%]">
     {/* ✅ Heading - "Obsvector: A Managed IT Service Provider" */}
     <div className={`lg:text-[34px] md:text-[24px] text-[18px] text-[#003566] font-bold text-center ${ubuntu.className}`}>
       Obsvector: A Managed IT Service Provider
