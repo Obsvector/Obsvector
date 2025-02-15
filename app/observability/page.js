@@ -236,7 +236,7 @@ const page = () => {
           viewport={{ once: true }}
           whileHover={{ x: 4, y: -4 }}
           variants={tile.animation}
-          className="h-32 flex flex-col cursor-pointer lg:m-0 md:m-0 m-10 items-center justify-center px-10 shadow-lg shadow-[#003566] space-y-1 rounded-md"
+          className="h-32 flex flex-col cursor-pointer lg:m-0 md:m-0 m-4 items-center justify-center px-10 shadow-lg shadow-[#003566] space-y-1 rounded-md"
         >
           <div>{tile.icon}</div>
           <div

@@ -189,7 +189,7 @@ const page = () => {
           viewport={{ once: true }}
           whileHover={{ x: 4, y: -4, transition: { duration: 0.2 } }}
           variants={tile.animation}
-          className="border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-10 space-y-4 shadow-lg rounded-md shadow-[#003566]"
+          className="border lg:p-10 p-4 flex flex-col lg:m-0 md:m-0 m-4 space-y-4 shadow-lg rounded-md shadow-[#003566]"
         >
           <div
             className={`lg:text-[20px] md:text-[16px] text-[14px] text-[#003566] font-bold underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}
@@ -209,7 +209,7 @@ const page = () => {
     initial="hidden"
     whileInView="visible"
     viewport={{ once: true }}
-    className="lg:mt-10 md:mt-16 bg-[#003566] mt-[90%] py-10"
+    className="lg:mt-10 md:mt-16 bg-[#003566]  py-10"
   >
     <motion.div
       variants={slideEffect("up", 0.2)}
@@ -241,7 +241,7 @@ const page = () => {
           key={index}
           variants={slideEffect(tile.direction, 0.2 * index)}
           whileHover={{ x: 4, y: -4, transition: { duration: 0.2 } }}
-          className="border p-4 flex flex-col lg:m-0 md:m-0 m-10 space-y-4  shadow-lg rounded-md shadow-[#003566]"
+          className="border p-4 flex flex-col lg:m-0 md:m-0 m-4 space-y-4  shadow-lg rounded-md shadow-[#003566]"
         >
           <div
             className={`lg:text-[16px] md:text-[16px] text-[14px] text-white font-bold underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}

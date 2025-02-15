@@ -152,7 +152,7 @@ const page = () => {
               viewport={{ once: true }}
               whileHover={{ x: 4, y: -4, transition: { duration: 0.2 } }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="border lg:p-10 cursor-pointer p-4 flex flex-col lg:m-0 md:m-0 m-10 space-y-4 shadow-lg rounded-md shadow-[#003566]"
+              className="border lg:p-10 cursor-pointer p-4 flex flex-col lg:m-0 md:m-0 m-4 space-y-4 shadow-lg rounded-md shadow-[#003566]"
             >
               <div
                 className={`lg:text-[22px] md:text-[18px] text-[16px] text-[#003566] font-bold underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}
@@ -286,7 +286,7 @@ const page = () => {
                 viewport={{ once: true }}
                 whileHover={{ x: 4, y: -4, transition: { duration: 0.2 } }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
-                className="border lg:p-10 p-4 flex cursor-pointer flex-col lg:m-0 md:m-0 m-10 space-y-4 shadow-lg  border-white rounded-md shadow-[#003566]"
+                className="border lg:p-10  p-10 flex cursor-pointer flex-col lg:m-0 md:m-0 m-2 space-y-4 shadow-lg  border-white rounded-md shadow-[#003566]"
               >
                 <div
                   className={`lg:text-[24px] md:text-[18px] text-[16px] text-white font-bold text-start underline underline-offset-8 decoration-[#003566] ${ubuntu.className}`}
@@ -294,7 +294,7 @@ const page = () => {
                   {service.title}
                 </div>
                 <div
-                  className={`md:text-md text-[12px] md:text-sm lg:text-[16px] sm:text-left font-normal text-white flex justify-center ${poppins.className}`}
+                  className={`md:text-md text-[12px] md:text-sm lg:text-[16px] text-start font-normal text-white flex justify-center ${poppins.className}`}
                 >
                   {service.description}
                 </div>
