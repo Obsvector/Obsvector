@@ -36,7 +36,7 @@ const Offer = () => {
               alt="No Image Found"
               width={500}
               height={500}
-              className="w-[100%] lg:h-[500px] md:h-[300px] opacity-50 shadow-lg rounded-md"
+              className="w-[100%] lg:h-[500px] md:h-[300px] opacity-50 shadow-lg rounded-tr-[100px] rounded-bl-[100px]"
             />
           </div>
           <div className=" lg:w-[50%] md:w-[50%] px-10 lg:space-y-10 space-y-2 flex flex-col justify-center items-center">
@@ -66,7 +66,7 @@ const Offer = () => {
               alt="No Image Found"
               width={500}
               height={500}
-              className="w-[100%] lg:h-[500px] md:h-[300px] opacity-50 shadow-lg rounded-md"
+              className="w-[100%] lg:h-[500px] md:h-[300px] opacity-50 shadow-lg rounded-md rounded-tr-[100px] rounded-bl-[100px]"
             />
           </div>
           <div className="lg:w-[50%] md:w-[50%] px-10 lg:space-y-10 space-y-2 flex flex-col justify-center items-center">
@@ -96,7 +96,7 @@ const Offer = () => {
               alt="No Image Found"
               width={500}
               height={500}
-              className="w-[100%] lg:h-[500px] md:h-[300px] opacity-60 shadow-lg rounded-md"
+              className="w-[100%] lg:h-[500px] md:h-[300px] opacity-60 shadow-lg rounded-md rounded-tr-[100px] rounded-bl-[100px]"
             />
           </div>
           <div className=" lg:w-[50%] md:w-[50%] px-10 lg:space-y-10 space-y-2 flex flex-col justify-center items-center">
