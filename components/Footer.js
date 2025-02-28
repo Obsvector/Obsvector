@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="space-y-4">
           <h3 className="text-xl font-bold">Contact Us</h3>
           <p className="flex items-center"><MdLocationOn className="mr-2" /> Mycon Acropolis Apartments, Madhapur, Hyderabad</p>
-          <p className="flex items-center"><MdEmail className="mr-2" /> obsvector@gmail.com</p>
+          <p className="flex items-center"><MdEmail className="mr-2" /> info@obsvector.com</p>
           <p className="flex items-center"><MdPhone className="mr-2" /> +91 90525 55678</p>
         </div>
 
