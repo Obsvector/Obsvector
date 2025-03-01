@@ -39,7 +39,7 @@ const Footer = () => {
 
       {/* ✅ Social Media & Copyright */}
       <div className="border-t border-gray-500 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center text-sm">
-        <p>© {new Date().getFullYear()} Obsvector. All rights reserved.</p> <p>Designed and Developed by <Link href='https://www.nandak.co' target="_blank">Nandak Innovations Private Limited</Link></p>
+        <p>© {new Date().getFullYear()} Obsvector. All rights reserved.</p> <p>Designed and Developed by <Link href='https://www.obsvector.com' target="_blank">ObsVector Private Limited</Link></p>
         
         {/* ✅ Social Media Links */}
         <div className="flex space-x-4 mt-4 md:mt-0">
