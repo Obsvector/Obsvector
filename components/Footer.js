@@ -12,9 +12,9 @@ const Footer = () => {
         {/* ✅ Contact Information */}
         <div className="space-y-4">
           <h3 className="text-xl font-bold">Contact Us</h3>
-          <p className="flex items-center"><MdLocationOn className="mr-2" /> Mycon Acropolis, Madhapur, Hyderabad</p>
+          <p className="flex items-center"><MdLocationOn className="mr-2" />Unit 203, Suite 678, SBR CV Towers, HUDA Techno Enclave, Madhapur, Hyderabad 500081</p>
           <p className="flex items-center"><MdEmail className="mr-2" /> info@obsvector.com</p>
-          <p className="flex items-center"><MdPhone className="mr-2" /> +91 90525 55678</p>
+          <p className="flex items-center"><MdPhone className="mr-2" /> 040-23420004</p>
         </div>
 
         {/* ✅ Quick Links */}
